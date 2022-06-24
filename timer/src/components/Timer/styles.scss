@@ -81,12 +81,12 @@ $dark: #0d1020;
 
 @media only screen and (max-width: 475px) {
   .countdown-container {
-    width: 30rem;
-    height: 30rem;
+    width: auto;
+    height: auto;
 
     .inside-bar {
       .remaining-time {
-        font-size: 8rem;
+        font-size: 6rem;
         margin-top: 9.5rem;
         line-height: 8rem;
         height: 8rem;
