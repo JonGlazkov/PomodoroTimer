@@ -7,7 +7,7 @@
 
 ![Resultado final do projeto](https://github.com/JonGlazkov/PomodoroTimer/blob/main/timer/src/assets/pomodoro-finalizado.png)
 
-<h4 align="center"><a href="https://letmeask-aa546.web.app">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://pomodoro-timer-topaz.vercel.app">Clique para visitar o projeto</a></h4>
 
 ---
 
