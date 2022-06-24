@@ -1,0 +1,321 @@
+.settings-form {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.settings-container {
+  height: 46.4rem;
+  width: 54rem;
+  background-color: #FBFBFB;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  position: absolute;
+  top: 15.5rem;
+
+  .header {
+    height: 9.3rem;
+    border-bottom: #e3e1e1 1px solid;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: auto;
+      margin: auto;
+      margin-right: 3.8rem;
+      margin-top: 4.7rem;
+      cursor: pointer;
+    }
+    
+    h2 {
+      margin: auto;
+      color: #161932;
+      margin-left: 4rem;
+      margin-top: 3.4rem;
+    }
+  }
+
+  .time {
+    height: 16rem;
+    border-bottom: #e3e1e1 1px solid;
+    width: 46rem;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1rem 3.6rem 5rem;
+    grid-template-areas:
+    "title title title"
+    "pomodoro short-break long-break"
+    "num1 num2 num3" ;
+
+
+    h4 {
+      color: #161932;
+      grid-area: title;
+      margin-bottom: 0;
+      margin-top: auto;
+    }
+
+    p {
+      color: #1E213F;
+      font-size: 1.2rem;
+      font-weight: bold;
+      mix-blend-mode: normal;
+      opacity: 0.8;
+
+      margin-top: auto;
+      margin-bottom: 0;
+
+      &.pomodoro {
+        grid-area: pomodoro
+      }
+
+      &.short-break {
+        grid-area: short-break;
+      }
+
+      &.long-break {
+        grid-area: long-break;
+      }
+    }
+
+    &.pomodoro-number {
+      grid-area: num1
+    }
+
+    &.short-break-number {
+      grid-area: num2;
+    }
+
+    &.long-break-number {
+      grid-area: num3;
+    }
+  }
+
+  .font {
+    height: 5 rem;
+    border-bottom: #E3E1E1 1px solid;
+    width: 46rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
+    h4 {
+      color: #161932;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    
+    .font-container {
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      button {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: none;
+        margin-left: 1.6rem;
+        cursor: pointer;
+        background: #EFF1FA;
+        color: #1E213F;
+        opacity: 0.7;
+        font-size: 1.5rem;
+        font-style: normal;
+      };
+      
+      .font-1 {
+        font-family: 'Orbitron';
+        font-weight: bold;
+      }
+
+      .font-2 {
+        font-family: 'Roboto Slab';
+        font-weight: normal;
+      }
+
+      .font-3 {
+        font-family: 'Space Mono';
+        font-weight: bold;
+      }
+
+      .font-selected {
+        background: #161932;
+        color: white;
+        opacity: 1;
+      }
+    }
+  }
+    
+  .color {
+    height: 12.3rem;
+    width: 46rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+
+    h4 {
+      color: #161932;
+      margin-top: 4rem;
+      margin-bottom: auto;
+    }
+
+    .color-container {
+      margin-left: auto;
+      margin-top: 2.4rem;
+      margin-bottom: auto;
+        
+      button {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: none;
+        margin-left: 1.6rem;
+        cursor: pointer;
+        color: transparent;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .color-1 {
+        background: #FF0020;
+      }
+  
+      .color-2 {
+        background: #1BF2F2;
+      }
+        
+      .color-3 {
+        background: #F207B4;
+      }
+  
+      .color-selected {
+        color: #161932;
+      }
+    }
+  }     
+}
+  
+  .apply {
+    width: 14rem;
+    height: 5.3rem;
+    background: #FF0020;
+    border-radius: 2.65rem;
+    border:none;
+    cursor: pointer;
+    margin-inline: auto;
+    position: absolute;
+    top: 59.2rem;
+    z-index: 200;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+
+
+@media only screen and (max-width: 650px) {
+  .settings-container {
+    width: 32.7rem;
+    height: auto;
+    top: 4.6rem;
+
+    .header {
+      height: 7.2rem;
+
+      h2 {
+        margin: auto;
+        font-size: 2rem;
+        margin-top: 2.4rem;
+        margin-left: 2.4rem;
+        line-height: 2rem;
+      }
+
+      img {
+        margin-right: 2.4rem;
+        margin-top: 2.9rem;
+      }
+    }
+
+    .time {
+      height: 21.3rem;
+      width: 28rem;
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 5.3rem 4.8rem 4.8rem 6.4rem;
+      grid-template-areas:
+      "title title",
+      "pomodoro num1",
+      "short-break num2",
+      "long-break num3";
+
+      h4 {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 2.4rem;
+      }
+
+      p {
+        margin-bottom: auto;
+        margin-top: 2.1rem;
+      }
+    }
+
+    .font {
+      height: 11.7rem;
+      width: 32.7rem;
+      flex-direction: column;
+
+      h4 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      
+      .font-container {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.8rem;
+
+        button {
+          margin-left: 0.8rem;
+          margin-right: 0.8rem;
+        }
+      }
+
+    }
+
+    .color {
+      height: 14.4rem;
+      width: 32.7rem;
+      flex-direction: column;
+
+      h4 {
+        text-align: center;
+        margin-top: 1.6rem;
+        margin-bottom: 0;
+      }
+
+      .color-container {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+
+        button {
+          margin-left: 0.8rem;
+          margin-right: 0.8;
+        }
+      }
+    }
+  }
+
+  .apply {
+    top: 56.8rem;
+  }
+}

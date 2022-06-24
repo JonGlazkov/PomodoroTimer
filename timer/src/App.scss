@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+$lightblue: #D7E0FF;
+$darkbackground: #121214;
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 9rem;
+  line-height: 10rem;
+  letter-spacing: -0.1rem;
+  color: $lightblue;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  color: $lightblue;
+}
+
+h3 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  letter-spacing: 1.2rem;
+  color: $lightblue;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.5rem;
+  color: $lightblue;
+  text-transform: uppercase;
+}
+
+
+.page {
+  background: $darkbackground;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 1.5rem
+}
+
+.settings-icon {
+  margin-top: 5rem;
+  cursor: pointer;
+}
