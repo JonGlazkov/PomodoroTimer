@@ -68,7 +68,7 @@ function App() {
     if (runningTime && seconds > 0) {
       interval = setInterval(() => {
         setSeconds((seconds) => seconds - 1)
-      }, 100)
+      }, 1000)
     } else if (seconds <= 0) {
       finishedTimerAudio.play()
       setRunningTime(false)
